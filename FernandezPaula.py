@@ -6,6 +6,14 @@ while Ingreso ==1:
     ELEGIR=int(input("ELIJA UNA OPCION: HONDA=1 \n YAMAHA=2 \n SUZUKI = 3 \n SALIR = 0"))
     while ELEGIR >=1 and ELEGIR<=4:
         PRECIO= int(input("INGRESE EL PRECIO:"))
-        print("TOTAL: $",PRECIO)
-        ELEGIR=int(input("ELIJA UNA OPCION: HONDA=1 \n YAMAHA=2 \n SUZUKI=3 \n SALIR=0"))
-
+        if ELEGIR==1:
+            DESC=(PRECIO*5)/100
+        if ELEGIR ==2:
+            DESC=(PRECIO*8)/100
+        if ELEGIR==3:
+            DESC==(PRECIO*10)/100
+        if ELEGIR ==4:
+            DESC==(PRECIO*2)/100
+            PRECIOTOTAL=PRECIO-DESC
+        print("TOTAL: $",PRECIOTOTAL)
+        ELEGIR=int(input("ELIJA UNA OPCION: HONDA=1 \n YAMAHA=2 \n SUZUKI=3 \n SALIR=0))
